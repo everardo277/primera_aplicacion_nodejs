@@ -19,8 +19,8 @@ app.use(express.static(join(__dirname,'public')));
 
 
 
-console.log('El Servidor is running on port 3000');
-app.listen(3000);
+console.log('El Servidor is running on port ', process.env.Port || 3000 );
+app.listen(process.env.Port || 3000);
 
 
 
